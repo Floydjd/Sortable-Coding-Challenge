@@ -2,7 +2,7 @@ import json
 import collections
 
 # FUNCTIONS START
-# Function for formatting data so it is easier to match
+# Formats data so it is easier to match
 def format(str):
     return str.replace("-", "") \
                 .replace(" ", "") \
@@ -15,7 +15,7 @@ def format(str):
                 .upper()
 
 
-# Reads in a file of JSON lines format and returns objects in array
+# Reads in a file of JSON lines format and returns dictionaries contained in array
 def parseFile(f):
     with open(f, "r") as ins:
         objs = []
